@@ -62,10 +62,10 @@ public class Triangle {
         if (side1==side2 && side2==side3){
             this.triangleType = TriangleType.EQUILATERO;
         }
-        else if (side1!=side2 && side2!=side3) {
-            this.triangleType = TriangleType.ESCALENO;
-        } else {
+        else if (side1 == side2 || side1 ==side3 || side2==side3) {
             this.triangleType = TriangleType.ISOCELES;
+        } else {
+            this.triangleType = TriangleType.ESCALENO;
         }
     }
 
