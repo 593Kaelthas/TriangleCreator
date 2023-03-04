@@ -3,9 +3,19 @@ package org.example;
 import Exceptions.UncreatedTriangle;
 
 public class Main {
-    public static void main(String[] args) throws UncreatedTriangle {
-        Triangle triangle = new Triangle(3.0,4.0,5.0);
-        System.out.println(triangle.toString());
+    public static void main(String[] args) throws UncreatedTriangle{
+        try {
+            Triangle triangle0 = new Triangle(1.0,2.0,3.0);
+
+        } catch (UncreatedTriangle uncreatedTriangle){
+
+        } finally {
+
+        }
+
+        Triangle triangle2 = new Triangle(1.0,2.0,3.0);
+
+
 
     }
 }
